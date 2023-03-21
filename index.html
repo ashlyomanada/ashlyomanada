@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.js" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Poppins:wght@100;200;300;400;600&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">LOGO</div>
+      <input type="checkbox" id="nav_check" hidden />
+      <nav>
+        <ul>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#project">PROJECTS</a></li>
+          <li><a href="#services">SERVICES</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+      <label for="nav_check" class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
+    </header>
+
+    <div class="home-container" id="home">
+      <div class="home-description-container">
+        <div data-aos="fade-up-right" class="home-description">
+          <h1 class="name">I'm <span>Ashly Omañada</span></h1>
+          <p class="my-description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Voluptatum, expedita.
+          </p>
+          <button class="button">
+            <span class="button-content">Download </span>
+          </button>
+        </div>
+      </div>
+      <div class="hero-container">
+        <div data-aos="fade-up-left" class="hero">
+          <img
+            class="hero-picture"
+            src="bg_images/mypicture1-removebg-preview.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="about-container" id="about">
+      <div class="about-body-container">
+        <div class="about-hero-container">
+          <div data-aos="fade-down-right" class="hero2">
+            <img class="about-picture" src="bg_images/mypicture2.jpg" alt="" />
+          </div>
+        </div>
+        <div class="about-description-container">
+          <div data-aos="fade-down-left" class="about-description">
+            <h1>ABOUT ME</h1>
+            <p class="aboutme-descrip">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+              alias sunt dolorem officiis earum beatae rem inventore veniam
+              nostrum corporis. Lorem ipsum dolor sit amet consectetur
+            </p>
+            <button class="button">
+              <span class="button-content">Learn More</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-container" id="project">
+      <div data-aos="zoom-out-down" class="project-header-container">
+        <h1>MY PROJECTS</h1>
+      </div>
+      <div class="col1">
+        <div data-aos="zoom-in-down" class="project1-container">
+          <div class="card">
+            <div class="card-image">
+              <div class="project-picture">
+                <h2 class="project-title">PROJECT 1</h2>
+                <img
+                  src="bg_images/project1.png"
+                  alt=""
+                  class="my-project-picture"
+                />
+                <p class="project-name">MINSU Attendance Management System</p>
+              </div>
+            </div>
+            <div class="card-description"></div>
+          </div>
+        </div>
+        <div data-aos="zoom-in-down" class="project2-container">
+          <div class="card">
+            <div class="card-image">
+              <div class="project-picture">
+                <h2 class="project-title">PROJECT 2</h2>
+                <img
+                  src="bg_images/projects2.jpg"
+                  alt=""
+                  class="my-project-picture"
+                />
+                <p class="project-name">Coffee Shop</p>
+              </div>
+            </div>
+            <div class="card-description"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col2">
+        <div data-aos="zoom-in-down" class="project3-container">
+          <div class="card">
+            <div class="card-image">
+              <div class="project-picture">
+                <h2 class="project-title">PROJECT 3</h2>
+                <img
+                  src="bg_images/project3.jpg"
+                  alt=""
+                  class="my-project-picture"
+                />
+                <p class="project-name">
+                  <a class="project-link" href="page2.html"
+                    >Bundat Burger Shop</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="card-description"></div>
+          </div>
+        </div>
+        <div data-aos="zoom-in-down" class="project4-container">
+          <div class="card">
+            <div class="card-image">
+              <div class="project-picture">
+                <h2 class="project-title">PROJECT 4</h2>
+                <img
+                  src="bg_images/project2.jpg"
+                  alt=""
+                  class="my-project-picture"
+                />
+                <p class="project-name">Chocolate Shop</p>
+              </div>
+            </div>
+            <div class="card-description"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="services-container" id="services">
+      <div data-aos="zoom-out-down" class="services-header-container">
+        <h1>MY SERVICES</h1>
+      </div>
+      <div class="services-body-container">
+        <div data-aos="flip-left" class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h1>C#</h1>
+            </div>
+            <div class="flip-card-back">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nostrum, mollitia.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div data-aos="flip-up" class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h1>JAVA</h1>
+            </div>
+            <div class="flip-card-back">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nostrum, mollitia.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div data-aos="flip-right" class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h1>HTML/CSS</h1>
+            </div>
+            <div class="flip-card-back">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nostrum, mollitia.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-container" id="contact">
+      <div data-aos="zoom-out-down" class="contact-headre-container">
+        <h1>CONTACT</h1>
+      </div>
+      <div class="contact-body-container">
+        <div class="contact-description-container">
+          <div data-aos="zoom-in-right" class="mycontact-container">
+            <div class="contact-header-description">
+              <p>
+                Im Ashly, A passionate web developer creating responsive
+                websites and building applications and providing inovative
+                designs
+              </p>
+            </div>
+            <div class="phone-container">
+              <div class="contact-picture-container">
+                <button class="phone-button"></button>
+              </div>
+              <div class="mycontact-description">
+                <h3>Phone</h3>
+                <p>+639507335078</p>
+              </div>
+            </div>
+            <div class="email-container">
+              <div class="contact-picture-container">
+                <button class="email-button"></button>
+              </div>
+              <div class="mycontact-description">
+                <h3>Email</h3>
+                <p>ashlyomanada@gmail.com</p>
+              </div>
+            </div>
+            <div class="address-container">
+              <div class="contact-picture-container">
+                <button class="address-button"></button>
+              </div>
+              <div class="mycontact-description">
+                <h3>Address</h3>
+                <p>Palhi,Calapan City,Oriental Mindoro,Philippines</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-container">
+          <form data-aos="zoom-in-left" action="">
+            <h2>CONTACT ME</h2>
+            <div class="input-container">
+              <label for="name">Name</label>
+              <input class="input-name" type="text" />
+              <label for="email">Email</label>
+              <input class="input-email" type="email" />
+              <label for="message">Message</label>
+              <input class="input-message" type="text" />
+              <button class="button">
+                <span class="button-content">Submit</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="futter-container">
+      <h3>Copyright 2023 All rights reserved | Created by Ashly Omañada</h3>
+      <div class="social-media-container">
+        <button class="facebook"></button>
+        <button class="instagram"></button>
+        <button class="twitter"></button>
+      </div>
+    </div>
+  </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>
