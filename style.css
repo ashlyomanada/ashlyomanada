@@ -14,13 +14,14 @@ body {
 header {
   background-color: #041725;
   height: 70px;
-  width: 100%;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 50px;
   position: fixed;
   z-index: 2;
+  max-width: 1350px;
 }
 header .logo {
   font-size: 30px;
@@ -160,7 +161,6 @@ span {
 .about-container {
   background-image: url("bg_images/layered-waves-haikei\ \(4\).png");
   background-size: cover;
-  background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -215,7 +215,6 @@ span {
   height: 100vh;
   background-image: url("bg_images/layered-waves-haikei\ \(1\).png");
   background-size: cover;
-  background-repeat: no-repeat;
   width: 100%;
   display: flex;
   align-items: center;
@@ -555,7 +554,7 @@ form {
   width: 90%;
   border-radius: 0.5rem;
 }
-label {
+.label {
   display: flex;
   align-self: flex-start;
   margin-left: 1rem;
@@ -613,6 +612,9 @@ label {
   opacity: 0.7;
 }
 @media screen and (max-width: 992px) {
+  header {
+    max-width: 992px;
+  }
   .home-description-container {
     justify-content: flex-end;
   }
@@ -671,6 +673,9 @@ label {
   }
 }
 @media screen and (max-width: 768px) {
+  header {
+    max-width: 768px;
+  }
   header nav {
     position: absolute;
     left: 0;
@@ -791,6 +796,9 @@ label {
 }
 
 @media screen and (max-width: 600px) {
+  header {
+    max-width: 600px;
+  }
   header nav {
     position: absolute;
     left: 0;
