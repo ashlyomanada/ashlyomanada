@@ -70,9 +70,10 @@ header nav ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  padding-right: 8rem;
 }
 .home-description {
-  height: 55%;
+  height: 60%;
   width: 73%;
   display: flex;
   justify-content: center;
@@ -94,6 +95,7 @@ span {
   background-image: url("bg_images/graph.png");
   background-size: cover;
   animation: myAnim 20s ease 0s infinite normal forwards;
+  overflow-x: hidden;
 }
 @keyframes myAnim {
   0%,
@@ -189,6 +191,7 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-left: 1rem;
 }
 .hero2 {
   display: flex;
@@ -234,13 +237,13 @@ span {
 }
 .col1 {
   height: 35%;
-  width: 70%;
+  width: 80%;
   display: flex;
   gap: 1rem;
 }
 .col2 {
   height: 35%;
-  width: 70%;
+  width: 80%;
   display: flex;
   gap: 1rem;
 }
@@ -366,7 +369,7 @@ span {
 }
 .flip-card {
   background-color: transparent;
-  width: 20%;
+  width: 25%;
   height: 100%;
   perspective: 1000px;
   font-family: sans-serif;
@@ -440,7 +443,8 @@ span {
 .contact-body-container {
   display: flex;
   height: 70%;
-  width: 70%;
+  width: 80%;
+  gap: 2rem;
 }
 .contact-description-container {
   display: flex;
@@ -535,7 +539,7 @@ span {
 form {
   display: flex;
   height: 100%;
-  width: 80%;
+  width: 100%;
   background-color: #041725;
   border-radius: 1rem;
   align-items: center;
@@ -630,6 +634,7 @@ textarea {
   }
   .home-description-container {
     justify-content: flex-end;
+    padding: 0;
   }
   .hero-container {
     justify-content: center;
@@ -644,19 +649,33 @@ textarea {
     height: 89%;
   }
   .hero2 {
-    height: 60%;
+    height: 100%;
     width: 100%;
     align-items: center;
     justify-content: center;
   }
+  .about-body-container {
+    flex-direction: column;
+  }
+  .about-hero-container {
+    height: 50%;
+    width: 100%;
+    padding-left: 0rem;
+  }
   .about-picture {
-    height: 80%;
+    height: 100%;
   }
   .about-description-container {
     justify-content: center;
+    width: 100%;
   }
-
-  .flip-card {
+  .about-description {
+    height: 100%;
+    width: 90%;
+    align-items: center;
+    text-align: center;
+  }
+  .about .flip-card {
     width: 30%;
   }
   .project-container {
@@ -664,15 +683,18 @@ textarea {
   }
   .col1 {
     width: 90%;
-    height: 28%;
+    height: 25%;
   }
   .col2 {
     width: 90%;
-    height: 28%;
+    height: 25%;
   }
   .services-body-container {
     height: 35%;
     gap: 1rem;
+  }
+  .flip-card {
+    width: 29%;
   }
   .services1-container {
     width: 30%;
@@ -698,7 +720,6 @@ textarea {
     width: 100%;
     left: -100%;
     top: 70px;
-    width: 100%;
     transition: 0.3s;
     display: flex;
     align-items: center;
@@ -729,7 +750,7 @@ textarea {
     justify-content: center;
   }
   .home-description-container {
-    height: 20%;
+    height: 25%;
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -738,6 +759,8 @@ textarea {
   .home-description {
     height: 100%;
     width: 60%;
+    align-items: center;
+    text-align: center;
   }
   .hero-container {
     height: 50%;
@@ -780,7 +803,7 @@ textarea {
   }
   .about-description {
     width: 100%;
-    height: 60%;
+    height: 65%;
     align-items: center;
   }
   .flip-card {
@@ -829,6 +852,7 @@ textarea {
   .contact-body-container {
     height: 90%;
     width: 100%;
+    gap: 1rem;
   }
   .contact-headre-container {
     width: 100%;
@@ -845,7 +869,7 @@ textarea {
   }
   .contact-form-container {
     height: 58%;
-    width: 75%;
+    width: 60%;
   }
   form {
     height: 90%;
@@ -862,7 +886,6 @@ textarea {
     width: 100%;
     left: -100%;
     top: 70px;
-    width: 100%;
     background-color: rgb(238, 172, 51);
     transition: 0.3s;
     display: flex;
@@ -949,6 +972,9 @@ textarea {
   .project-name {
     font-size: 0.7rem;
   }
+  .services-container {
+    height: 160vh;
+  }
   .col1 {
     flex-direction: column;
     align-items: center;
@@ -981,7 +1007,7 @@ textarea {
   }
   .contact-form-container {
     height: 100%;
-    width: 85%;
+    width: 70%;
   }
   form {
     height: 100%;
@@ -997,6 +1023,9 @@ textarea {
   .about-picture {
     width: 70%;
     height: 100%;
+  }
+  .project-title {
+    text-align: center;
   }
   .futter-container {
     height: 30vh;
