@@ -12,8 +12,15 @@
     />
   </head>
   <body>
+    <div class="loader"></div>
     <header>
-      <div class="logo">LOGO</div>
+      <div class="logo">
+        <img
+          class="logo-picture"
+          src="bg_images/logo-removebg-preview.png"
+          alt=""
+        />
+      </div>
       <input type="checkbox" id="nav_check" hidden />
       <nav>
         <ul>
@@ -294,10 +301,40 @@
         Copyright &copy; 2023 All rights reserved | Created by Ashly Omañada
       </h3>
       <div class="social-media-container">
-        <button class="facebook"></button>
-        <button class="instagram"></button>
-        <button class="twitter"></button>
+        <a
+          class="facebook-link"
+          href="https://www.facebook.com/ashly.omanada?mibextid=ZbWKwL"
+          target="_blank"
+        >
+          <img class="fb-pic" src="bg_images/facebook.png" alt=""
+        /></a>
+        <a
+          class="facebook-link"
+          href="https://instagram.com/ashlyomanada?igshid=ZDdkNTZiNTM="
+          target="_blank"
+        >
+          <img class="fb-pic" src="bg_images/instagram.png" alt=""
+        /></a>
+        <a
+          class="facebook-link"
+          href="https://github.com/ashlyomanada"
+          target="_blank"
+        >
+          <img class="git-pic" src="bg_images/github.png" alt=""
+        /></a>
       </div>
     </div>
+
+    <script>
+      window.addEventListener("load", () => {
+        const loader = document.querySelector(".loader");
+
+        loader.classList.add("loader-hidden");
+
+        loader.addEventListener("transitionend", () => {
+          document.body.removeChild("loader");
+        });
+      });
+    </script>
   </body>
 </html>

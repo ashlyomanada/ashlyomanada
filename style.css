@@ -45,6 +45,53 @@ header nav ul li a {
 header nav ul li a:hover {
   border-bottom-color: rgb(238, 172, 51);
 }
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("bg_images/layered-waves-haikei\ \(2\).png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 3;
+  transition: opacity 2s, visibility 2s;
+}
+.loader-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid white;
+  border-top-color: #ff8c00;
+  border-radius: 50%;
+  animation: loading 0.7s ease infinite;
+}
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+.logo {
+  height: 100%;
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-picture {
+  height: 80%;
+  width: 75%;
+}
 .hamburger {
   cursor: pointer;
   display: block;
@@ -66,11 +113,11 @@ header nav ul li a:hover {
 }
 .home-description-container {
   height: 70%;
-  width: 50%;
+  width: 60%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding-right: 8rem;
+  padding-right: 7rem;
 }
 .home-description {
   height: 60%;
@@ -596,38 +643,19 @@ textarea {
   justify-content: center;
   gap: 1rem;
 }
-.facebook {
-  padding: 1rem;
+.facebook-link {
+  height: 100%;
+  width: 3.5%;
+}
+.fb-pic {
+  height: 100%;
+}
+.git-pic {
+  height: 100%;
+  background-color: white;
   border-radius: 50%;
-  border: none;
-  border-radius: 50%;
-  border: none;
-  background-image: url("bg_images/facebook.png");
-  background-size: cover;
 }
-.facebook:hover {
-  opacity: 0.7;
-}
-.instagram {
-  padding: 1rem;
-  border-radius: 50%;
-  border: none;
-  background-image: url("bg_images/instagram.png");
-  background-size: cover;
-}
-.instagram:hover {
-  opacity: 0.7;
-}
-.twitter {
-  padding: 1rem;
-  border-radius: 50%;
-  border: none;
-  background-image: url("bg_images/twitter.png");
-  background-size: cover;
-}
-.twitter:hover {
-  opacity: 0.7;
-}
+
 @media screen and (max-width: 992px) {
   header {
     max-width: 992px;
@@ -708,6 +736,13 @@ textarea {
   .contact-body-container {
     width: 90%;
     height: 45%;
+  }
+  .social-media-container {
+    gap: 2rem;
+  }
+  .facebook-link {
+    height: 50%;
+    width: 3.5%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -874,6 +909,13 @@ textarea {
   form {
     height: 90%;
   }
+  .social-media-container {
+    gap: 1.5rem;
+  }
+  .facebook-link {
+    height: 50%;
+    width: 3.5%;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -904,9 +946,16 @@ textarea {
   header nav ul li a {
     margin: 5px 0;
   }
+  .logo {
+    width: 45%;
+  }
   .hero-container {
-    align-items: center;
+    align-items: flex-end;
     height: 40%;
+  }
+  .hero {
+    display: flex;
+    align-items: flex-end;
   }
   .hero-picture {
     height: 90%;
@@ -1017,6 +1066,9 @@ textarea {
   }
 }
 @media screen and (max-width: 280px) {
+  .logo {
+    width: 60%;
+  }
   .about-container {
     height: 123vh;
   }
@@ -1024,10 +1076,17 @@ textarea {
     width: 70%;
     height: 100%;
   }
+
   .project-title {
     text-align: center;
   }
+  .services-container {
+    height: 250vh;
+  }
   .futter-container {
     height: 30vh;
+  }
+  .social-media-container {
+    gap: 2rem;
   }
 }
